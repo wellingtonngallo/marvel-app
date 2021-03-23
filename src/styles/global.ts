@@ -20,6 +20,11 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  body, input, button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  
   body {
     display: flex;
     justify-content: center;

@@ -1,19 +1,25 @@
+import { Link } from 'react-router-dom';
 import { Container } from './styles';
 
 interface CardProps {
+  id: number;
   name: string;
   image: string;
 }
 
-export const Card = ({name, image}: CardProps): JSX.Element => {
+export const Card = ({name, image, id}: CardProps): JSX.Element => {
+
+
   return (
     <Container>
-      <header>
-        <img src={image} alt={name} />
-      </header>
-      <section>
-        <h2>{name}</h2>
-      </section>
+      <Link to={`/series/${id}`}>
+        <header>
+          <img src={image} alt={name} />
+        </header>
+        <section className="body">
+          <h2>{name}</h2>
+        </section>
+      </Link>
     </Container>
   )
 }
