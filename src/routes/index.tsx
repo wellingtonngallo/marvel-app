@@ -1,6 +1,6 @@
 import { Switch, Route } from 'react-router-dom';
 import { Home } from '../pages/Home';
-import { SeriesList } from '../pages/SeriesList';
+import { SeriesList } from '../pages/CharacterSeriesList';
 
 const Routes = () => (
   <Switch>
