@@ -5,8 +5,8 @@ export const api = axios.create({
 });
 
 export const DEFAULT_QUERY = {
-  ts: '1616178722',
-  apikey: 'b2f5122b38e02562908f22993443b897',
-  hash: '25b45fcfae7e07d92e36e72f5080b808'
+  ts: '1616510515',
+  apikey: '95253317406061977fae8f019b88840f',
+  hash: 'fb8a57817ff46389cc2e15a7710c1e79'
 }
 

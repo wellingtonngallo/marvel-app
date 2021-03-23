@@ -40,8 +40,8 @@ export const SeriesList = (): JSX.Element => {
           </tr>  
         </thead>
         <tbody>
-          {series.map(serie => (
-            <tr key={serie.name}>
+          {series.map((serie, index) => (
+            <tr key={index}>
               <td>{serie.name}</td>
             </tr>
           ))}

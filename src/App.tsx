@@ -1,5 +1,6 @@
 import { GlobalStyle } from './styles/global';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { CharacterProvider } from './context/getCharacters';
 import Routes from './routes';
 
 const App = () => {
@@ -7,7 +8,9 @@ const App = () => {
     <>
       <GlobalStyle/>
       <Router>
-        <Routes/>
+        <CharacterProvider>
+          <Routes/>
+        </CharacterProvider>
       </Router>
     </>
   );
