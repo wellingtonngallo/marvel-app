@@ -7,7 +7,7 @@ export const LoadingContainer = styled.div`
   padding: 3rem 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 32px;
+  grid-gap: 2rem;
   justify-content: center;
   align-items: center;
 

@@ -1,8 +1,7 @@
 import { useCharacter } from '../../context/getCharacters';
 import useInfiniteScroll from 'react-infinite-scroll-hook';
-import { useState } from 'react';
 import { Card } from "../../components/Card"
-import { CardContainer } from './styles';
+import { CardContainer, Container } from './styles';
 import { Search } from '../../components/Search';
 import { Loading } from '../../components/Loading';
 
@@ -15,9 +14,8 @@ export const Home = (): JSX.Element => {
     scrollContainer: 'window',
   });
 
-
   return (
-    <> 
+    <Container>
       <Search/>
       <CardContainer ref={infiniteRef}>
         {
@@ -31,6 +29,7 @@ export const Home = (): JSX.Element => {
           ))
         }
         {
+          loading &&
           <>
           <Loading/>
           <Loading/>
@@ -39,7 +38,6 @@ export const Home = (): JSX.Element => {
           </>
         }
       </CardContainer>
-      
-    </>
+    </Container>
   )
 }

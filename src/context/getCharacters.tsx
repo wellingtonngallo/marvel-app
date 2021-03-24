@@ -68,6 +68,7 @@ export const CharacterProvider: React.FC = ({children}) => {
   }
 
   const searchCharacter = (nameCharacter: string) => {
+    setLoading(true);
     setOffset(0);
     setCharacters([]);
     setNameStartsWith(nameCharacter);
@@ -75,7 +76,7 @@ export const CharacterProvider: React.FC = ({children}) => {
 
 
   return (
-    <GetCharactersContext.Provider value={{characters, loading, setLimitRequest, searchCharacter, nameStartsWith}}>
+    <GetCharactersContext.Provider value={{characters, loading, nameStartsWith, setLimitRequest, searchCharacter}}>
       {children}
     </GetCharactersContext.Provider>
   )

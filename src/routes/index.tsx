@@ -5,7 +5,7 @@ import { SeriesList } from '../pages/CharacterSeriesList';
 const Routes = () => (
   <Switch>
     <Route path="/" exact component={Home} />
-    <Route path="/series/:id" exact component={SeriesList} />
+    <Route path="/series/:id/:name" exact component={SeriesList} />
   </Switch>
 )
 

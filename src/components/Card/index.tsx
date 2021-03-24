@@ -10,7 +10,7 @@ interface CardProps {
 export const Card = ({name, image, id}: CardProps): JSX.Element => {
   return (
     <Container>
-      <Link to={`/series/${id}`}>
+      <Link to={`/series/${id}/${name}`}>
         <header>
           <img src={image} alt={name} />
         </header>

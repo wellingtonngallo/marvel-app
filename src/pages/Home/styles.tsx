@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  padding: 4rem;
+`
+
 export const CardContainer = styled.div`
+  position: relative;
+  left: 35rem;
   width: 100%;
   max-width: 1250px;
   margin: 0;
@@ -10,5 +16,4 @@ export const CardContainer = styled.div`
   grid-gap: 32px;
   justify-content: center;
   align-items: center;
-
 `
