@@ -16,7 +16,7 @@ interface Serie {
 }
 
 export const SeriesList = (): JSX.Element => {
-  const  [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [series, setSeries] = useState<Serie[]>([]);
   const { id, name } = useParams<Params>();
 
